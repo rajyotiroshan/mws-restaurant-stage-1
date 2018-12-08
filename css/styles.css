@@ -144,6 +144,9 @@ nav h1 a {
 }
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+  column-gap: 10px;
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
