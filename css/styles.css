@@ -129,6 +129,10 @@ nav h1 a {
   padding: 0 10px;
   min-width: 100px;
 }
+.filter-options select:focus {
+  border:2px solid blue;
+}
+
 @media only screen and (max-width: 500px){
   .filter-options{
     grid-template-columns: auto auto;
