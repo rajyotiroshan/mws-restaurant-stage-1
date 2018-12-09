@@ -263,7 +263,7 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
@@ -278,4 +278,23 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+@media only screen and (min-width: 850px){
+  .inside #maincontent {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto auto;
+  }
+  #map-container {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    padding: 0;
+  }
+  .inside #map {
+    height: 100%;
+  }
+  .inside #map-container {
+    padding: 0;
+  }
 }
