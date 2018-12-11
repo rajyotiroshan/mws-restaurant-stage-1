@@ -175,7 +175,7 @@ createRestaurantHTML = (restaurant) => {
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
 
   li.append(name);
@@ -193,6 +193,7 @@ createRestaurantHTML = (restaurant) => {
   more.href = DBHelper.urlForRestaurant(restaurant);
   //move focus here after filter options.
   more.setAttribute("tabindex", "3");
+  more.setAttribute("role","button");
   li.append(more)
   return li
 }
